@@ -8,6 +8,8 @@ st \- simple terminal
 .RB [ \-aiv ]
 .RB [ \-c
 .IR class ]
+.RB [ \-d
+.IR path ]
 .RB [ \-f
 .IR font ]
 .RB [ \-g
@@ -34,6 +36,8 @@ st \- simple terminal
 .RB [ \-aiv ]
 .RB [ \-c
 .IR class ]
+.RB [ \-d
+.IR path ]
 .RB [ \-f
 .IR font ]
 .RB [ \-g
@@ -66,6 +70,10 @@ disable alternate screens in terminal
 .TP
 .BI \-c " class"
 defines the window class (default $TERM).
+.TP
+.BI \-d " path"
+changes the working directory to
+.IR path .
 .TP
 .BI \-f " font"
 defines the
