@@ -3,6 +3,8 @@
 st \- simple terminal
 .SH SYNOPSIS
 .B st
+.RB [ \-A
+.IR alpha ]
 .RB [ \-aiv ]
 .RB [ \-c
 .IR class ]
@@ -27,6 +29,8 @@ st \- simple terminal
 .RI [ arguments ...]]
 .PP
 .B st
+.RB [ \-A
+.IR alpha]
 .RB [ \-aiv ]
 .RB [ \-c
 .IR class ]
@@ -51,6 +55,11 @@ st \- simple terminal
 .B st
 is a simple terminal emulator.
 .SH OPTIONS
+.TP
+.BI \-A " alpha"
+override the alpha value.
+.I alpha
+should to be between 0 and 1 (0 beeing fully transparent).
 .TP
 .B \-a
 disable alternate screens in terminal
