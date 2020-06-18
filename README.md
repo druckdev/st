@@ -2,8 +2,19 @@
 st is a simple terminal emulator for X which sucks less.
 
 
-## Bindings
-### Scrolling
+## About this fork
+### Patches applied
+ - st-alpha-0.8.2.diff
+ - st-anysize-0.8.1.diff
+ - st-desktopentry-0.8.2.diff
+ - st-scrollback-20200419-72e3f6c.diff
+ - st-scrollback-mouse-20191024-a2c479c.diff
+ - st-scrollback-mouse-altscreen-20200416-5703aa0.diff
+ - st-w3m-0.8.3.diff
+ - st-workingdir-20200317-51e19ea.diff
+
+### Bindings
+#### Scrolling
 ```
           MouseWheel  -  move by line
   Shift + MouseWheel  -  move by 3 lines
@@ -12,6 +23,17 @@ Control + MouseWheel  -  move by page
         Alt + {k, j}  -  move {up, down} by line
 Shift + Alt + {k, j}  -  move {up, down} by 3 lines
         Alt + {u, d}  -  move {up, down} by page
+```
+
+### Upstream
+To pull changes from upstream:
+```
+if not already done:
+$ git remote add upstream 'https://git.suckless.org/st'
+
+$ git fetch upstream
+$ git checkout custom
+$ git merge upstream/master
 ```
 
 
