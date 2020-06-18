@@ -2,6 +2,19 @@
 st is a simple terminal emulator for X which sucks less.
 
 
+## Bindings
+### Scrolling
+```
+          MouseWheel  -  move by line
+  Shift + MouseWheel  -  move by 3 lines
+Control + MouseWheel  -  move by page
+
+        Alt + {k, j}  -  move {up, down} by line
+Shift + Alt + {k, j}  -  move {up, down} by 3 lines
+        Alt + {u, d}  -  move {up, down} by page
+```
+
+
 ## Requirements
 In order to build st you need the Xlib header files.\
 For the transparency to work you need a composite manager (e.g. picom,

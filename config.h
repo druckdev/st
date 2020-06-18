@@ -178,15 +178,22 @@ static uint forcemousemod = ShiftMask;
  * Beware that overloading Button1 will disable the selection.
  */
 static MouseShortcut mshortcuts[] = {
-	/* mask                 button   function        argument       release */
-	{ XK_ANY_MOD,           Button2, selpaste,       {.i = 0},      1 },
-	{ ShiftMask,            Button4, ttysend,        {.s = "\033[5;2~"} },
-	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} },
-	{ ShiftMask,            Button5, ttysend,        {.s = "\033[6;2~"} },
-	{ XK_ANY_MOD,           Button5, ttysend,        {.s = "\005"} },
+	/* mask        button   function     argument          release  altscreen */
+	{ XK_ANY_MOD,  Button2, selpaste,    {.i = 0},            1,        0 },
+	{ ShiftMask,   Button4, kscrollup,   {.i = 3},            0,       -1 },
+	{ ShiftMask,   Button4, ttysend, {.s = "\031;\031;\031"}, 0,       +1 },
+	{ ControlMask, Button4, ttysend,     {.s = "\033[5;2~"},  0,        0 },
+	{ XK_ANY_MOD,  Button4, kscrollup,   {.i = 1},            0,       -1 },
+	{ XK_ANY_MOD,  Button4, ttysend,     {.s = "\031"},       0,        0 },
+	{ ShiftMask,   Button5, kscrolldown, {.i = 3},            0,       -1 },
+	{ ShiftMask,   Button5, ttysend, {.s = "\005;\005;\055"}, 0,       +1 },
+	{ ControlMask, Button5, ttysend,     {.s = "\033[6;2~"},  0,        0 },
+	{ XK_ANY_MOD,  Button5, kscrolldown, {.i = 1},            0,       -1 },
+	{ XK_ANY_MOD,  Button5, ttysend,     {.s = "\005"},       0,        0 },
 };
 
 /* Internal keyboard shortcuts. */
+#define SHIFT_MOD (Mod1Mask|ShiftMask)
 #define MODKEY Mod1Mask
 #define TERMMOD (ControlMask|ShiftMask)
 
@@ -204,6 +211,14 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
+	{ Mod1Mask,             XK_k,           kscrollup,      {.i = +1} },
+	{ SHIFT_MOD,            XK_K,           kscrollup,      {.i = +3} },
+	{ MODKEY,               XK_u,           kscrollup,      {.i = -1} },
+	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
+	{ Mod1Mask,             XK_j,           kscrolldown,    {.i = +1} },
+	{ SHIFT_MOD,            XK_J,           kscrolldown,    {.i = +3} },
+	{ MODKEY,               XK_d,           kscrolldown,    {.i = -1} },
+	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
 };
 
 /*
