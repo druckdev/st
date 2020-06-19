@@ -7,6 +7,7 @@ st is a simple terminal emulator for X which sucks less.
  - [st-alpha-0.8.2.diff](https://st.suckless.org/patches/alpha/)
  - [st-anysize-0.8.1.diff](https://st.suckless.org/patches/anysize/)
  - [st-desktopentry-0.8.2.diff](https://st.suckless.org/patches/desktopentry/)
+ - [st-hidecursor-0.8.3.diff](https://st.suckless.org/patches/hidecursor/)
  - [st-scrollback-20200419-72e3f6c.diff](https://st.suckless.org/patches/scrollback/)
  - [st-scrollback-mouse-20191024-a2c479c.diff](https://st.suckless.org/patches/scrollback/)
  - [st-scrollback-mouse-altscreen-20200416-5703aa0.diff](https://st.suckless.org/patches/scrollback/)
