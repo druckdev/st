@@ -4,15 +4,24 @@ st is a simple terminal emulator for X which sucks less.
 
 ## About this fork
 ### Patches applied
- - [alpha (0.8.2)](https://st.suckless.org/patches/alpha/)
- - [anysize (0.8.1)](https://st.suckless.org/patches/anysize/)
- - [desktopentry (0.8.2)](https://st.suckless.org/patches/desktopentry/)
- - [hidecursor (0.8.3)](https://st.suckless.org/patches/hidecursor/)
- - [scrollback (20200419)](https://st.suckless.org/patches/scrollback/)
- - [scrollback-mouse (20191024)](https://st.suckless.org/patches/scrollback/)
- - [scrollback-mouse-altscreen (20200416)](https://st.suckless.org/patches/scrollback/)
- - [w3m (0.8.3)](https://st.suckless.org/patches/w3m/)
- - [workingdir (20200317)](https://st.suckless.org/patches/workingdir/)
+ - [alpha](https://st.suckless.org/patches/alpha/)
+ ([0.8.2](https://st.suckless.org/patches/alpha/st-alpha-0.8.2.diff))
+ - [anysize](https://st.suckless.org/patches/anysize/)
+ ([0.8.1](https://st.suckless.org/patches/anysize/st-anysize-0.8.1.diff))
+ - [desktopentry](https://st.suckless.org/patches/desktopentry/)
+ ([0.8.2](https://st.suckless.org/patches/desktopentry/st-desktopentry-0.8.2.diff))
+ - [hidecursor](https://st.suckless.org/patches/hidecursor/)
+ ([0.8.3](https://st.suckless.org/patches/hidecursor/st-hidecursor-0.8.3.diff))
+ - [scrollback](https://st.suckless.org/patches/scrollback/)
+ ([20200419](https://st.suckless.org/patches/scrollback/st-scrollback-20200419-72e3f6c.diff))
+ - [scrollback-mouse](https://st.suckless.org/patches/scrollback/)
+ ([20191024](https://st.suckless.org/patches/scrollback/st-scrollback-mouse-20191024-a2c479.diff))
+ - [scrollback-mouse-altscreen](https://st.suckless.org/patches/scrollback/)
+ ([20200416](https://st.suckless.org/patches/scrollback/st-scrollback-mouse-altscreen-20200416-5703aa0.diff))
+ - [w3m](https://st.suckless.org/patches/w3m/)
+ ([0.8.3](https://st.suckless.org/patches/w3m/st-w3m-0.8.3.diff))
+ - [workingdir](https://st.suckless.org/patches/workingdir/)
+ ([20200317](https://st.suckless.org/patches/workingdir/st-workingdir-20200317-51e19ea.diff))
 
 ### Bindings
 #### Scrolling
