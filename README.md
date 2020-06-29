@@ -26,13 +26,15 @@ st is a simple terminal emulator for X which sucks less.
 ### Bindings
 #### Scrolling
 ```
-          MouseWheel  -  move by line
-  Shift + MouseWheel  -  move by 3 lines
-Control + MouseWheel  -  move by page
+          MouseWheel  -  Move by line
+  Shift + MouseWheel  -  Move by line in alternate mode
+                         Send ^E/^Y when not in alternate mode and scroll line
+                         buffer when in alternate mode.
+Control + MouseWheel  -  Move by page
 
-        Alt + {k, j}  -  move {up, down} by line
-Shift + Alt + {k, j}  -  move {up, down} by 3 lines
-        Alt + {u, d}  -  move {up, down} by page
+        Alt + {k, j}  -  Move {up, down} by line
+Shift + Alt + {k, j}  -  Move {up, down} by 3 lines
+        Alt + {u, d}  -  Move {up, down} by page
 ```
 
 ### Upstream
