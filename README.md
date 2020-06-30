@@ -46,6 +46,9 @@ $ git remote add upstream 'https://git.suckless.org/st'
 $ git fetch upstream
 $ git checkout custom
 $ git merge upstream/master
+
+To push the upstream tags:
+$ git push origin --tags
 ```
 
 
