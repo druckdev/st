@@ -12,30 +12,10 @@ st is a simple terminal emulator for X which sucks less.
  ([0.8.2](https://st.suckless.org/patches/desktopentry/st-desktopentry-0.8.2.diff))
  - [hidecursor](https://st.suckless.org/patches/hidecursor/)
  ([0.8.3](https://st.suckless.org/patches/hidecursor/st-hidecursor-0.8.3.diff))
- - [scrollback](https://st.suckless.org/patches/scrollback/)
- ([20200419](https://st.suckless.org/patches/scrollback/st-scrollback-20200419-72e3f6c.diff))
- - [scrollback-mouse](https://st.suckless.org/patches/scrollback/)
- ([20191024](https://st.suckless.org/patches/scrollback/st-scrollback-mouse-20191024-a2c479.diff))
- - [scrollback-mouse-altscreen](https://st.suckless.org/patches/scrollback/)
- ([20200416](https://st.suckless.org/patches/scrollback/st-scrollback-mouse-altscreen-20200416-5703aa0.diff))
  - [w3m](https://st.suckless.org/patches/w3m/)
  ([0.8.3](https://st.suckless.org/patches/w3m/st-w3m-0.8.3.diff))
  - [workingdir](https://st.suckless.org/patches/workingdir/)
  ([20200317](https://st.suckless.org/patches/workingdir/st-workingdir-20200317-51e19ea.diff))
-
-### Bindings
-#### Scrolling
-```
-          MouseWheel  -  Move by line
-  Shift + MouseWheel  -  Move by line in alternate mode
-                         Send ^E/^Y when not in alternate mode and scroll line
-                         buffer when in alternate mode.
-Control + MouseWheel  -  Move by page
-
-        Alt + {k, j}  -  Move {up, down} by line
-Shift + Alt + {k, j}  -  Move {up, down} by 3 lines
-        Alt + {u, d}  -  Move {up, down} by page
-```
 
 ### Upstream
 To pull changes from upstream:
