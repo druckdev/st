@@ -12,6 +12,8 @@ st is a simple terminal emulator for X which sucks less.
  ([0.8.2](https://st.suckless.org/patches/desktopentry/st-desktopentry-0.8.2.diff))
  - [hidecursor](https://st.suckless.org/patches/hidecursor/)
  ([0.8.3](https://st.suckless.org/patches/hidecursor/st-hidecursor-0.8.3.diff))
+ - [vim browse](https://st.suckless.org/patches/vim_browse/)
+ ([20200607-9ba7ecf](https://st.suckless.org/patches/vim_browse/st-vimBrowse-20200607-9ba7ecf.diff))
  - [w3m](https://st.suckless.org/patches/w3m/)
  ([0.8.3](https://st.suckless.org/patches/w3m/st-w3m-0.8.3.diff))
  - [workingdir](https://st.suckless.org/patches/workingdir/)
