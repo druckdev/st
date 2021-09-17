@@ -22,6 +22,8 @@ st is a simple terminal emulator for X which sucks less.
  ([0.8.3](https://st.suckless.org/patches/w3m/st-w3m-0.8.3.diff))
  - [workingdir](https://st.suckless.org/patches/workingdir/)
  ([20200317](https://st.suckless.org/patches/workingdir/st-workingdir-20200317-51e19ea.diff))
+ - [xclearwin](http://st.suckless.org/patches/xclearwin/)
+ ([20200419](http://st.suckless.org/patches/xclearwin/st-xclearwin-20200419-6ee7143.diff))
 
 ### Bindings
 #### Scrolling
