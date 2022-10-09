@@ -10,6 +10,8 @@ st is a simple terminal emulator for X which sucks less.
  ([0.8.1](https://st.suckless.org/patches/anysize/st-anysize-0.8.1.diff))
  - [desktopentry](https://st.suckless.org/patches/desktopentry/)
  ([0.8.2](https://st.suckless.org/patches/desktopentry/st-desktopentry-0.8.2.diff))
+ - [dynamic-cursor-color](https://st.suckless.org/patches/dynamic-cursor-color/)
+ ([0.8.4](https://st.suckless.org/patches/dynamic-cursor-color/st-dynamic-cursor-color-0.8.4.diff))
  - [hidecursor](https://st.suckless.org/patches/hidecursor/)
  ([0.8.3](https://st.suckless.org/patches/hidecursor/st-hidecursor-0.8.3.diff))
  - [keyboard_select](http://st.suckless.org/patches/keyboard_select/)
