@@ -2677,7 +2677,7 @@ void set_notifmode(int type, KeySym ksym) {
 
 	if ( type < 2 ) {
 		char *z = lib[type];
-		for (deb = &term.line[bot][col - 6], fin = &term.line[bot][col]; deb < fin; z++, deb++)
+		for (deb = &term.line[bot][col - strlen(z)], fin = &term.line[bot][col]; deb < fin; z++, deb++)
 			deb->mode = ATTR_REVERSE,
 				deb->u = *z,
 				deb->fg = defaultfg, deb->bg = defaultbg;
