@@ -494,7 +494,7 @@ bpress(XEvent *e)
 		} else if (TIMEDIFF(now, xsel.tclick1) <= doubleclicktimeout) {
 			snap = SNAP_WORD;
 		} else {
-			snap = 0;
+			snap = SNAP_NONE;
 		}
 		xsel.tclick2 = xsel.tclick1;
 		xsel.tclick1 = now;

@@ -457,11 +457,12 @@ static Key key[] = {
  * Selection types' masks.
  * Use the same masks as usual.
  * Button1Mask is always unset, to make masks match between ButtonPress.
- * ButtonRelease and MotionNotify.
+ * ButtonRelease and MotionNotify. forcemousemod is always unset too.
  * If no match is found, regular selection is used.
  */
 static uint selmasks[] = {
 	[SEL_RECTANGULAR] = Mod1Mask,
+	[SEL_LINES] = Mod1Mask | ControlMask,
 };
 
 /*

@@ -400,7 +400,7 @@ void
 selinit(void)
 {
 	sel.mode = SEL_IDLE;
-	sel.snap = 0;
+	sel.snap = SNAP_NONE;
 	sel.ob.x = -1;
 }
 
@@ -430,7 +430,7 @@ selstart(int col, int row, int snap)
 	sel.oe.y = sel.ob.y = row;
 	selnormalize();
 
-	if (sel.snap != 0)
+	if (sel.snap != SNAP_NONE)
 		sel.mode = SEL_READY;
 	tsetdirt(sel.nb.y, sel.ne.y);
 }
@@ -452,6 +452,11 @@ selextend(int col, int row, int type, int done)
 	oldsby = sel.nb.y;
 	oldsey = sel.ne.y;
 	oldtype = sel.type;
+
+	if (type == SEL_LINES)
+		sel.snap = SNAP_LINE;
+	else
+		sel.snap = SNAP_NONE;
 
 	sel.oe.x = col;
 	sel.oe.y = row;

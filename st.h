@@ -44,10 +44,12 @@ enum selection_mode {
 
 enum selection_type {
 	SEL_REGULAR = 1,
-	SEL_RECTANGULAR = 2
+	SEL_RECTANGULAR = 2,
+	SEL_LINES = 3
 };
 
 enum selection_snap {
+	SNAP_NONE = 0,
 	SNAP_WORD = 1,
 	SNAP_LINE = 2
 };
