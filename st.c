@@ -2735,15 +2735,21 @@ int trt_kbdselect(KeySym ksym, char *buf, int len) {
 	static Rune target[64];
 	static int type = 1, ptarget, in_use;
 	static int sens, quant;
+	static int oldx, oldy; /* cursor position before search */
 	static char selectsearch_mode;
 	int i, bound, *xy;
 
 
 	if ( selectsearch_mode & 2 ) {
-		if ( ksym == XK_Return ) {
+		if ( ksym == XK_Return || ksym == XK_Escape ) {
 			selectsearch_mode ^= 2;
 			set_notifmode(selectsearch_mode, -2);
-			if ( ksym == XK_Escape )    ptarget = 0;
+			if ( ksym == XK_Escape ) {
+				ptarget = 0;
+				/* restore old cursor position */
+				term.c.x = oldx, term.c.y = oldy;
+				select_or_drawcursor(selectsearch_mode, type);
+			}
 			return 0;
 		}
 		else if ( ksym == XK_BackSpace ) {
@@ -2794,6 +2800,7 @@ int trt_kbdselect(KeySym ksym, char *buf, int len) {
 		ptarget = 0;
 		set_notifmode(15, ksym);
 		selectsearch_mode ^= 2;
+		oldx = term.c.x, oldy = term.c.y;
 		break;
 	case XK_Escape :
 		if ( !in_use )  break;
